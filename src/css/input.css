@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Scan the root HTML file. */
+@source "../../index.html";
+
+/* Scan JavaScript source files. */
+@source "../js";

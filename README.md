@@ -98,16 +98,16 @@ Only implement interactions that are actually required by the reference design.
 
 ## Technology Stack
 
-| Technology | Purpose |
-| --- | --- |
-| HTML5 | Semantic page structure and content |
-| Tailwind CSS v4 | Utility-first styling and responsive layouts |
-| Tailwind CLI | CSS compilation and production minification |
-| Vanilla JavaScript | Navigation and UI interactions |
-| npm | Dependency management and scripts |
-| Git | Version control |
-| GitHub | Source code hosting |
-| VS Code | Recommended code editor |
+| Technology         | Purpose                                      |
+| ------------------ | -------------------------------------------- |
+| HTML5              | Semantic page structure and content          |
+| Tailwind CSS v4    | Utility-first styling and responsive layouts |
+| Tailwind CLI       | CSS compilation and production minification  |
+| Vanilla JavaScript | Navigation and UI interactions               |
+| npm                | Dependency management and scripts            |
+| Git                | Version control                              |
+| GitHub             | Source code hosting                          |
+| VS Code            | Recommended code editor                      |
 
 ### Why This Stack?
 
@@ -122,6 +122,7 @@ The following folder structure is the recommended starting point:
 ```text
 nexcent-landing-page-html/
 │
+├── index.html
 ├── public/
 │   ├── images/
 │   │   ├── hero-image.webp
@@ -132,7 +133,6 @@ nexcent-landing-page-html/
 │   └── favicon.svg
 │
 ├── src/
-│   ├── index.html
 │   │
 │   ├── css/
 │   │   ├── input.css
@@ -290,10 +290,7 @@ Create `src/index.html` and add a standard HTML5 document.
   <head>
     <meta charset="UTF-8" />
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta
       name="description"
@@ -454,7 +451,9 @@ Use Tailwind's responsive variants, such as `sm:`, `md:`, `lg:`, and `xl:`, when
 Example:
 
 ```html
-<section class="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:px-8 lg:py-24">
+<section
+  class="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:px-8 lg:py-24"
+>
   <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-12">
     <div>
       <h1 class="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">

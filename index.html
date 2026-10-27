@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8" />
+
+    <!-- Responsive Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Metadata -->
+    <meta name="description"
+        content="Discover Nexcent's modern digital solutions designed to help businesses grow, connect with customers, and build a stronger online presence." />
+
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Page Title -->
+    <title>Nexcent — Build Your Digital Presence</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon">
+
+    <!-- Tailwind CSS v4 Compiled Stylesheet -->
+    <link rel="stylesheet" href="./src/css/output.css" />
+
+</head>
+
+<body class="min-h-screen bg-white font-sans text-gray-900 antialiased">
+    <!-- Accessibility: Skip Navigation -->
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-gray-900 focus:shadow-lg">
+        Skip to main content
+    </a>
+
+    <!-- Nexcent Header -->
+    <header id="nexcentHeader" class="fixed inset-x-0 top-0 z-50 bg-[#F5F7FA] shadow-sm">
+        <div
+            class="mx-auto grid max-w-[1280px] grid-cols-[1fr_auto] items-center px-5 sm:px-8 lg:grid-cols-[1fr_auto_1fr] lg:px-10">
+            <!-- Logo -->
+            <a href="/" class="inline-flex w-fit items-center gap-2.5 py-5" aria-label="Nexcent home">
+                <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.7863 13.1341L13.3954 22.3669L8.00448 13.1341H18.7863ZM20.2305 12.3088H6.55444L13.3954 24L20.2305 12.3088Z"
+                        fill="#263238" />
+                    <path
+                        d="M28.1591 1.65038L33.55 10.8833H22.7681L28.1591 1.65038ZM28.1591 0L21.3181 11.6912H35L28.1591 0Z"
+                        fill="#263238" />
+                    <path d="M0 0L5.7359 10.3409L12.0038 0.259661L0 0Z" fill="#4CAF4F" />
+                    <path d="M13.3955 0.905762L19.4121 11.1889H7.36728L13.3955 0.905762Z" fill="#4CAF4F" />
+                    <path d="M20.9615 13.4341L26.9839 24H14.6526L20.7744 13.4341H20.9615Z" fill="#4CAF4F" />
+                    <path d="M22.2653 12.7935L28.1591 23.1978L34.1347 12.7935H22.2653Z" fill="#4CAF4F" />
+                </svg>
+
+
+                <span class="text-[27px] font-bold leading-none tracking-tight text-[#263238]">
+                    Nexcent
+                </span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menuToggle" type="button"
+                class="inline-flex size-11 items-center justify-center rounded-lg text-[#263238] transition-colors duration-200 hover:bg-[#E8F5E9] focus:outline-none lg:hidden"
+                aria-label="Open navigation menu" aria-controls="headerNavigation" aria-expanded="false">
+                <!-- Hamburger SVG -->
+                <svg id="menuIcon" class="size-7 cursor-pointer" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M4 6H20" />
+                    <path d="M4 12H20" />
+                    <path d="M4 18H20" />
+                </svg>
+
+                <!-- Close SVG -->
+                <svg id="closeIcon" class="hidden size-7 cursor-pointer" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <path d="M18 6L6 18" />
+                    <path d="M6 6L18 18" />
+                </svg>
+            </button>
+
+            <!-- Single Responsive Navigation -->
+            <nav id="headerNavigation" aria-label="Main navigation"
+                class="invisible col-span-2 max-h-0 w-full overflow-y-auto opacity-0 transition-[max-height,opacity,visibility] duration-300 ease-in-out lg:visible lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:contents lg:max-h-none lg:overflow-visible lg:opacity-100">
+                <!-- Navigation Links -->
+                <ul
+                    class="flex flex-col gap-1 border-t border-gray-200 py-4 lg:col-start-2 lg:row-start-1 lg:flex-row lg:items-center lg:justify-center lg:gap-2 lg:border-0 lg:py-0 xl:gap-3">
+                    <li>
+                        <a href="#home"
+                            class="navLink block rounded-lg bg-[#E8F5E9] px-4 py-3 text-base font-medium text-[#4CAF4F] transition-colors duration-200 hover:bg-[#E8F5E9] lg:px-3 lg:py-2"
+                            aria-current="location">Home</a>
+                    </li>
+                    <li>
+                        <a href="#service"
+                            class="navLink block rounded-lg px-4 py-3 text-base text-[#263238] transition-colors duration-200 hover:bg-[#E8F5E9] hover:text-[#388E3C] lg:px-3 lg:py-2">Service</a>
+                    </li>
+                    <li>
+                        <a href="#feature"
+                            class="navLink block rounded-lg px-4 py-3 text-base text-[#263238] transition-colors duration-200 hover:bg-[#E8F5E9] hover:text-[#388E3C] lg:px-3 lg:py-2">Feature</a>
+                    </li>
+                    <li>
+                        <a href="#product"
+                            class="navLink block rounded-lg px-4 py-3 text-base text-[#263238] transition-colors duration-200 hover:bg-[#E8F5E9] hover:text-[#388E3C] lg:px-3 lg:py-2">Product</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial"
+                            class="navLink block rounded-lg px-4 py-3 text-base text-[#263238] transition-colors duration-200 hover:bg-[#E8F5E9] hover:text-[#388E3C] lg:px-3 lg:py-2">Testimonial</a>
+                    </li>
+                    <li>
+                        <a href="#faq"
+                            class="navLink block rounded-lg px-4 py-3 text-base text-[#263238] transition-colors duration-200 hover:bg-[#E8F5E9] hover:text-[#388E3C] lg:px-3 lg:py-2">FAQ</a>
+                    </li>
+                </ul>
+
+                <!-- Account Actions -->
+                <div
+                    class="flex flex-col gap-3 border-t border-gray-200 py-5 lg:col-start-3 lg:row-start-1 lg:ml-auto lg:flex-row lg:items-center lg:justify-self-end lg:gap-5 lg:border-0 lg:py-0 xl:gap-8">
+                    <a href="#login"
+                        class="navLink rounded-lg px-4 py-3 text-center text-sm font-medium text-[#4CAF4F] transition-colors duration-200 hover:bg-[#E8F5E9] lg:px-2 lg:py-2 cursor-pointer">Login</a>
+
+                    <a href="#signup"
+                        class="navLink inline-flex min-h-10 items-center justify-center rounded-md bg-[#4CAF4F] px-5 py-2.5 text-sm font-medium text-white transition-colors duration-200 hover:bg-[#388E3C] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4CAF4F] cursor-pointer">Sign
+                        up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Overlay -->
+    <div id="headerOverlay"
+        class="pointer-events-none invisible fixed inset-0 z-40 bg-[#263238]/40 opacity-0 transition-opacity duration-300 lg:hidden"
+        aria-hidden="true"></div>
+
+    <!-- Main Content -->
+    <main id="nexcentMainContent">
+        <!-- Hero Section -->
+        <section id="hero" aria-labelledby="hero-title">
+            <!-- Hero content will be implemented here -->
+        </section>
+
+        <!-- Additional Figma Sections will be added here -->
+    </main>
+
+    <!-- Footer -->
+    <footer id="nexcentFooter">
+        <!-- Footer content will be implemented here -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
