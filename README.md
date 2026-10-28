@@ -125,12 +125,12 @@ nexcent-landing-page-html/
 ├── index.html
 ├── public/
 │   ├── images/
-│   │   ├── hero-image.webp
-│   │   ├── about-image.webp
-│   │   ├── project-01.webp
-│   │   └── logo.svg
+│   │   ├── heroImage.png
+│   │   ├── aboutImage.png
+│   │   ├── project-01.png
+│   │   └── logo.png
 │   │
-│   └── favicon.svg
+│   └── favicon.png
 │
 ├── src/
 │   │
@@ -140,6 +140,7 @@ nexcent-landing-page-html/
 │   │
 │   └── js/
 │       └── main.js
+│       └── menuToggle.js
 │
 ├── .gitignore
 ├── LICENSE

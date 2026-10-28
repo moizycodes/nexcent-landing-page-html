@@ -4,4 +4,4 @@
 @source "../../index.html";
 
 /* Scan JavaScript source files. */
-@source "../js";
+@source "../js/main.js";
